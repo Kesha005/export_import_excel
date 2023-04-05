@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\ExelImportController;
+use App\Http\Controllers\ExcelImportController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/',[ExelImportController::class,'index'])->name('index');
+Route::get('/',[ExcelImportController::class,'index'])->name('index');
 
-Route::post('/post',[ExelImportController::class,'import_exel'])->name('import_exel');
+Route::post('/post',[ExcelImportController::class,'import_exel'])->name('import_exel');
 
